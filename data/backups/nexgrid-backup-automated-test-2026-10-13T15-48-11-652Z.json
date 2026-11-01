@@ -1,0 +1,511 @@
+{
+  "admins": [
+    {
+      "id": "ADM-1001",
+      "username": "admin",
+      "email": "nexgriddigital@gmail.com",
+      "passwordHash": "38b72b2420ec747ca7f1a102cdd8a0ca5801de0686969d23c7125c7b51003f8a93a7670701b5b6a79ea9618dafdb1a96a819b024247da632a4e29e1b359a53ae",
+      "salt": "8a75a7e87dac722b6d86a49a3bc97379",
+      "fullName": "NexGrid System Administrator",
+      "role": "super_admin",
+      "createdAt": "2026-01-10T08:00:00Z",
+      "lastLoginAt": "2026-10-13T15:47:43.081Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": "CUST-1001",
+      "businessName": "Abyssinia Logistics PLC",
+      "contactPerson": "Dawit Hailu",
+      "phone": "+251911456789",
+      "email": "dawit@abyssinialogistics.com",
+      "address": "Kirkos Sub-City, Debrezeit Road, Addis Ababa",
+      "notes": "Key enterprise freight and forwarding client with 3 custom domain systems.",
+      "status": "active",
+      "createdAt": "2026-01-15T09:30:00Z",
+      "updatedAt": "2026-01-15T09:30:00Z"
+    },
+    {
+      "id": "CUST-1002",
+      "businessName": "Entoto Highland Coffee Exporters",
+      "contactPerson": "Sara Mengistu",
+      "phone": "+251922334455",
+      "email": "sara@entotocoffee.et",
+      "address": "Bole Medhanealem, Addis Ababa",
+      "notes": "Specialty coffee export house. Requires automated annual domain and cloud email renewal.",
+      "status": "active",
+      "createdAt": "2026-02-01T11:00:00Z",
+      "updatedAt": "2026-02-01T11:00:00Z"
+    },
+    {
+      "id": "CUST-1003",
+      "businessName": "Addis Cloud Software Labs",
+      "contactPerson": "Yonas Tadesse",
+      "phone": "+251933887766",
+      "email": "yonas@addiscloud.io",
+      "address": "Kazanchis Tech Hub, Addis Ababa",
+      "notes": "Software engineering agency.",
+      "status": "active",
+      "createdAt": "2026-03-05T14:20:00Z",
+      "updatedAt": "2026-03-05T14:20:00Z"
+    },
+    {
+      "id": "CUST-1004",
+      "businessName": "Sheba Heritage Tours & Travel",
+      "contactPerson": "Tigist Bekele",
+      "phone": "+251944556677",
+      "email": "tigist@shebatours.com",
+      "address": "Piazza, Arada Sub-City, Addis Ababa",
+      "notes": "Boutique travel agency. Domain expired recently, renewal follow-up pending.",
+      "status": "active",
+      "createdAt": "2025-10-10T10:00:00Z",
+      "updatedAt": "2026-10-10T10:00:00Z"
+    }
+  ],
+  "domains": [
+    {
+      "id": "DOM-1001",
+      "domainName": "abyssinialogistics.com",
+      "customerId": "CUST-1001",
+      "registrationDate": "2023-10-20",
+      "expirationDate": "2026-10-20",
+      "renewalPrice": 3850,
+      "currency": "ETB",
+      "registrationPeriodYears": 1,
+      "registrar": "Ethio Telecom / OpenSRS",
+      "status": "Expiring Soon",
+      "notes": "Primary business domain. Auto reminder due.",
+      "renewalHistory": [
+        {
+          "id": "REN-01",
+          "date": "2025-10-18",
+          "previousExpirationDate": "2025-10-20",
+          "newExpirationDate": "2026-10-20",
+          "price": 3500,
+          "currency": "ETB",
+          "recordedBy": "admin",
+          "notes": "Renewed for 1 year"
+        }
+      ],
+      "sentReminders": [
+        {
+          "intervalDays": 30,
+          "sentAt": "2026-10-13T15:47:27.655Z"
+        }
+      ],
+      "createdAt": "2023-10-20T08:00:00Z",
+      "updatedAt": "2026-10-13T15:47:27.655Z"
+    },
+    {
+      "id": "DOM-1002",
+      "domainName": "abyssiniafreight.et",
+      "customerId": "CUST-1001",
+      "registrationDate": "2024-10-27",
+      "expirationDate": "2026-10-27",
+      "renewalPrice": 2400,
+      "currency": "ETB",
+      "registrationPeriodYears": 1,
+      "registrar": "Ethio Telecom (.et Registry)",
+      "status": "Expiring Soon",
+      "notes": "Local ccTLD for local cargo tracking portal.",
+      "renewalHistory": [],
+      "sentReminders": [
+        {
+          "intervalDays": 30,
+          "sentAt": "2026-10-13T15:47:27.656Z"
+        }
+      ],
+      "createdAt": "2024-10-27T08:00:00Z",
+      "updatedAt": "2026-10-13T15:47:27.656Z"
+    },
+    {
+      "id": "DOM-1003",
+      "domainName": "entotocoffee.et",
+      "customerId": "CUST-1002",
+      "registrationDate": "2025-11-15",
+      "expirationDate": "2026-11-15",
+      "renewalPrice": 2800,
+      "currency": "ETB",
+      "registrationPeriodYears": 1,
+      "registrar": "Ethio Telecom (.et Registry)",
+      "status": "Active",
+      "notes": "Official coffee export domain and web portal.",
+      "renewalHistory": [],
+      "sentReminders": [],
+      "createdAt": "2025-11-15T09:00:00Z",
+      "updatedAt": "2026-05-10T09:00:00Z"
+    },
+    {
+      "id": "DOM-1004",
+      "domainName": "addiscloud.io",
+      "customerId": "CUST-1003",
+      "registrationDate": "2025-12-01",
+      "expirationDate": "2027-12-01",
+      "renewalPrice": 4950,
+      "currency": "ETB",
+      "registrationPeriodYears": 2,
+      "registrar": "Namecheap",
+      "status": "Active",
+      "notes": "Multi-year registration.",
+      "renewalHistory": [],
+      "sentReminders": [],
+      "createdAt": "2025-12-01T10:00:00Z",
+      "updatedAt": "2026-01-10T10:00:00Z"
+    },
+    {
+      "id": "DOM-1005",
+      "domainName": "shebatours.com",
+      "customerId": "CUST-1004",
+      "registrationDate": "2024-10-05",
+      "expirationDate": "2026-10-05",
+      "renewalPrice": 3850,
+      "currency": "ETB",
+      "registrationPeriodYears": 1,
+      "registrar": "GoDaddy",
+      "status": "Expired",
+      "notes": "Grace period active until end of month. Reminder sent.",
+      "renewalHistory": [],
+      "sentReminders": [
+        {
+          "intervalDays": 1,
+          "sentAt": "2026-10-04T08:00:00Z"
+        }
+      ],
+      "createdAt": "2024-10-05T09:00:00Z",
+      "updatedAt": "2026-10-06T09:00:00Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "INV-1001",
+      "documentNumber": "INV-2026-001",
+      "customerId": "CUST-1001",
+      "issueDate": "2026-10-01",
+      "dueDate": "2026-10-18",
+      "currency": "ETB",
+      "items": [
+        {
+          "id": "item-1",
+          "description": "Domain Annual Renewal (abyssinialogistics.com)",
+          "quantity": 1,
+          "unitPrice": 3850,
+          "lineTotal": 3850
+        },
+        {
+          "id": "item-2",
+          "description": "Domain Annual Renewal (abyssiniafreight.et)",
+          "quantity": 1,
+          "unitPrice": 2400,
+          "lineTotal": 2400
+        }
+      ],
+      "subtotal": 6250,
+      "discount": 250,
+      "taxRate": 15,
+      "taxAmount": 900,
+      "totalAmount": 6900,
+      "totalPaid": 3000,
+      "balanceDue": 3900,
+      "status": "Partially Paid",
+      "notes": "Client made advance partial payment of 3,000 ETB via CBE.",
+      "paymentInstructions": "Bank Transfer to CBE Acc: 1000234890123 (NexGrid Digital Systems)",
+      "terms": "Payment due within 15 days of invoice date. DNS records subject to suspension upon expiry.",
+      "createdAt": "2026-10-01T08:00:00Z",
+      "updatedAt": "2026-10-05T08:00:00Z"
+    },
+    {
+      "id": "INV-1002",
+      "documentNumber": "INV-2026-002",
+      "customerId": "CUST-1002",
+      "issueDate": "2026-09-15",
+      "dueDate": "2026-09-30",
+      "currency": "ETB",
+      "items": [
+        {
+          "id": "item-1",
+          "description": "Business Hosting Tier 2 (Annual)",
+          "quantity": 1,
+          "unitPrice": 12500,
+          "lineTotal": 12500
+        }
+      ],
+      "subtotal": 12500,
+      "discount": 0,
+      "taxRate": 15,
+      "taxAmount": 1875,
+      "totalAmount": 14375,
+      "totalPaid": 14375,
+      "balanceDue": 0,
+      "status": "Paid",
+      "notes": "Paid in full via Awash Bank transfer.",
+      "paymentInstructions": "Awash Bank: 01320489123000",
+      "terms": "Service active for 365 days from activation.",
+      "createdAt": "2026-09-15T09:00:00Z",
+      "updatedAt": "2026-09-18T10:00:00Z"
+    },
+    {
+      "id": "INV-1003",
+      "documentNumber": "INV-2026-003",
+      "customerId": "CUST-1004",
+      "issueDate": "2026-09-20",
+      "dueDate": "2026-10-04",
+      "currency": "ETB",
+      "items": [
+        {
+          "id": "item-1",
+          "description": "Domain Renewal & DNS Management (shebatours.com)",
+          "quantity": 1,
+          "unitPrice": 3850,
+          "lineTotal": 3850
+        }
+      ],
+      "subtotal": 3850,
+      "discount": 0,
+      "taxRate": 15,
+      "taxAmount": 577.5,
+      "totalAmount": 4427.5,
+      "totalPaid": 0,
+      "balanceDue": 4427.5,
+      "status": "Overdue",
+      "notes": "Payment overdue. Follow up required.",
+      "paymentInstructions": "Telebirr: 0911234567 or CBE: 1000234890123",
+      "terms": "Immediate settlement required to reinstate service.",
+      "createdAt": "2026-09-20T08:00:00Z",
+      "updatedAt": "2026-10-05T08:00:00Z"
+    }
+  ],
+  "quotations": [
+    {
+      "id": "QUO-1001",
+      "documentNumber": "QT-2026-001",
+      "customerId": "CUST-1003",
+      "issueDate": "2026-10-08",
+      "expiryDate": "2026-10-28",
+      "currency": "ETB",
+      "items": [
+        {
+          "id": "qitem-1",
+          "description": "Enterprise Cloud Server Setup & Migration",
+          "quantity": 1,
+          "unitPrice": 35000,
+          "lineTotal": 35000
+        },
+        {
+          "id": "qitem-2",
+          "description": "SSL Wildcard Security Certificate (2-Year)",
+          "quantity": 1,
+          "unitPrice": 7500,
+          "lineTotal": 7500
+        }
+      ],
+      "subtotal": 42500,
+      "discount": 2500,
+      "taxRate": 15,
+      "taxAmount": 6000,
+      "totalAmount": 46000,
+      "status": "Sent",
+      "notes": "Custom proposal submitted to Yonas Tadesse for review.",
+      "terms": "Quotation valid for 20 calendar days from issue date.",
+      "createdAt": "2026-10-08T11:00:00Z",
+      "updatedAt": "2026-10-08T11:00:00Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "PAY-1001",
+      "paymentNumber": "REC-2026-001",
+      "customerId": "CUST-1001",
+      "invoiceId": "INV-1001",
+      "amount": 3000,
+      "currency": "ETB",
+      "paymentDate": "2026-10-05T14:30:00Z",
+      "paymentMethod": "Bank Transfer",
+      "referenceNumber": "CBE-FT26278X90",
+      "recordedBy": "admin",
+      "notes": "Initial partial payment for annual domain renewal package.",
+      "status": "Confirmed",
+      "createdAt": "2026-10-05T14:30:00Z",
+      "updatedAt": "2026-10-05T14:30:00Z"
+    },
+    {
+      "id": "PAY-1002",
+      "paymentNumber": "REC-2026-002",
+      "customerId": "CUST-1002",
+      "invoiceId": "INV-1002",
+      "amount": 14375,
+      "currency": "ETB",
+      "paymentDate": "2026-09-18T10:00:00Z",
+      "paymentMethod": "Bank Transfer",
+      "referenceNumber": "AWASH-TX-9901842",
+      "recordedBy": "admin",
+      "notes": "Full payment for Business Hosting Tier 2.",
+      "status": "Confirmed",
+      "createdAt": "2026-09-18T10:00:00Z",
+      "updatedAt": "2026-09-18T10:00:00Z"
+    }
+  ],
+  "messageLogs": [
+    {
+      "id": "MSG-1001",
+      "customerId": "CUST-1001",
+      "customerName": "Abyssinia Logistics PLC",
+      "destination": "+251911456789",
+      "channel": "sms",
+      "messageType": "welcome",
+      "content": "Hello Dawit Hailu, welcome to NexGrid Digital Systems! Thank you for choosing our services. For assistance, contact us at +251 91 123 4567.",
+      "status": "Sent",
+      "providerReference": "SMSET-TX-84920",
+      "createdAt": "2026-01-15T09:31:00Z",
+      "sentAt": "2026-01-15T09:31:02Z"
+    },
+    {
+      "id": "MSG-1002",
+      "customerId": "CUST-1001",
+      "customerName": "Abyssinia Logistics PLC",
+      "destination": "+251911456789",
+      "channel": "sms",
+      "messageType": "payment_confirmation",
+      "content": "Hello Dawit Hailu, we have confirmed your payment of 3,000 ETB received on 2026-10-05 for INV-2026-001. Remaining balance: 3,900 ETB. Thank you for choosing NexGrid Digital Systems.",
+      "status": "Sent",
+      "providerReference": "SMSET-TX-91024",
+      "createdAt": "2026-10-05T14:31:00Z",
+      "sentAt": "2026-10-05T14:31:03Z"
+    },
+    {
+      "id": "MSG-1003",
+      "customerId": "CUST-1004",
+      "customerName": "Sheba Heritage Tours & Travel",
+      "destination": "+251944556677",
+      "channel": "sms",
+      "messageType": "domain_reminder",
+      "content": "Hello Tigist Bekele, your domain shebatours.com expires on 2026-10-05. Renewal price: 3850 ETB. Please contact NexGrid Digital Systems to arrange renewal.",
+      "status": "Sent",
+      "providerReference": "SMSET-TX-94812",
+      "createdAt": "2026-10-04T08:00:00Z",
+      "sentAt": "2026-10-04T08:00:02Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "AUD-1006",
+      "action": "LOGIN_SUCCESS",
+      "entityType": "auth",
+      "entityId": "ADM-1001",
+      "details": "Admin admin logged in successfully",
+      "performedBy": "admin",
+      "timestamp": "2026-10-13T15:47:43.082Z"
+    },
+    {
+      "id": "AUD-1005",
+      "action": "REMINDER_DISPATCHED",
+      "entityType": "domain",
+      "entityId": "DOM-1002",
+      "details": "Sent 30-day renewal reminder for abyssiniafreight.et to Abyssinia Logistics PLC",
+      "performedBy": "Scheduler",
+      "timestamp": "2026-10-13T15:47:27.656Z"
+    },
+    {
+      "id": "AUD-1004",
+      "action": "REMINDER_DISPATCHED",
+      "entityType": "domain",
+      "entityId": "DOM-1001",
+      "details": "Sent 30-day renewal reminder for abyssinialogistics.com to Abyssinia Logistics PLC",
+      "performedBy": "Scheduler",
+      "timestamp": "2026-10-13T15:47:27.655Z"
+    },
+    {
+      "id": "AUD-1001",
+      "action": "SYSTEM_INITIALIZATION",
+      "entityType": "settings",
+      "entityId": "SYSTEM",
+      "details": "NexGrid Admin Portal initialized with security policies and Ethiopian timezone configuration.",
+      "performedBy": "System",
+      "timestamp": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "AUD-1002",
+      "action": "CUSTOMER_CREATED",
+      "entityType": "customer",
+      "entityId": "CUST-1001",
+      "details": "Created customer record for Abyssinia Logistics PLC (+251911456789)",
+      "performedBy": "admin",
+      "timestamp": "2026-01-15T09:30:00Z"
+    },
+    {
+      "id": "AUD-1003",
+      "action": "PAYMENT_CONFIRMED",
+      "entityType": "payment",
+      "entityId": "PAY-1001",
+      "details": "Confirmed partial payment of 3,000 ETB against invoice INV-2026-001 via CBE-FT26278X90",
+      "performedBy": "admin",
+      "timestamp": "2026-10-05T14:30:00Z"
+    }
+  ],
+  "settings": {
+    "company": {
+      "name": "NexGrid Digital Systems",
+      "email": "billing@nexgrid.et",
+      "phone": "+251 91 123 4567",
+      "address": "Bole Sub-City, Mickey Leland St, Addis Ababa, Ethiopia",
+      "website": "https://nexgrid.et",
+      "taxNumber": "TIN-008923412",
+      "bankDetails": "Commercial Bank of Ethiopia (CBE): 1000234890123 / Awash Bank: 01320489123000 / Telebirr: 0911234567"
+    },
+    "sms": {
+      "provider": "SMS Ethiopia (sms.et)",
+      "apiUrl": "https://smsethiopia.com/api/sms/send",
+      "apiKey": "",
+      "senderId": "NEXGRID",
+      "enabled": false
+    },
+    "email": {
+      "provider": "SMTP",
+      "smtpHost": "mail.nexgrid.et",
+      "smtpPort": 587,
+      "smtpUser": "notifications@nexgrid.et",
+      "senderEmail": "notifications@nexgrid.et",
+      "senderName": "NexGrid Digital Systems",
+      "enabled": false
+    },
+    "system": {
+      "defaultCurrency": "ETB",
+      "timeZone": "Africa/Addis_Ababa",
+      "reminderIntervals": [
+        30,
+        14,
+        7,
+        3,
+        1
+      ],
+      "autoSendWelcomeSMS": true,
+      "autoSendWelcomeEmail": true,
+      "autoSendPaymentConfirmSMS": true,
+      "autoSendPaymentConfirmEmail": true,
+      "sessionTimeoutMinutes": 60,
+      "defaultVatRate": 15
+    },
+    "templates": {
+      "welcomeSMS": "Hello [Customer Name], welcome to NexGrid Digital Systems! Thank you for choosing our services. For assistance, contact us at +251 91 123 4567.",
+      "domainReminderSMS": "Hello [Customer Name], your domain [Domain Name] expires on [Expiration Date]. Renewal price: [Amount] [Currency]. Please contact NexGrid Digital Systems to arrange renewal.",
+      "paymentConfirmationSMS": "Hello [Customer Name], we have confirmed your payment of [Amount] [Currency] received on [Payment Date] for [Service/Invoice Number]. Remaining balance: [Balance] [Currency]. Thank you for choosing NexGrid Digital Systems.",
+      "invoiceReminderSMS": "Hello [Customer Name], this is a reminder that invoice [Invoice Number] for [Amount] [Currency] is due on [Due Date]. Please arrange payment at your earliest convenience.",
+      "welcomeEmailSubject": "Welcome to NexGrid Digital Systems",
+      "welcomeEmailBody": "Dear [Customer Name],\n\nWelcome to NexGrid Digital Systems! We are thrilled to manage your enterprise digital infrastructure, domains, and web hosting.\n\nYour Customer ID is [Customer ID].\nIf you have any questions, feel free to reply to this email or call +251 91 123 4567.\n\nWarm regards,\nNexGrid Digital Systems Billing & Operations Team",
+      "domainReminderEmailSubject": "Domain Renewal Notice: [Domain Name]",
+      "domainReminderEmailBody": "Dear [Customer Name],\n\nThis is an automated notification from NexGrid Digital Systems that your domain name [Domain Name] is scheduled to expire on [Expiration Date] ([Days Left] days remaining).\n\nRenewal Amount: [Amount] [Currency]\nRegistrar: [Registrar]\n\nTo ensure zero disruption to your email and online services, please settle the renewal balance via CBE, Awash Bank, or Telebirr and share the payment confirmation with us.\n\nBest regards,\nNexGrid Digital Systems Domain Management Desk",
+      "paymentConfirmationEmailSubject": "Payment Receipt: [Payment Number] - [Amount] [Currency]",
+      "paymentConfirmationEmailBody": "Dear [Customer Name],\n\nWe have received and confirmed your payment of [Amount] [Currency] on [Payment Date].\nPayment Method: [Payment Method]\nReference: [Reference Number]\nCovering: [Service/Invoice Number]\nRemaining Account Balance: [Balance] [Currency]\n\nThank you for your business!\n\nSincerely,\nNexGrid Digital Systems Accounts Department"
+    }
+  },
+  "sessions": [
+    {
+      "token": "d06fe53c70bf3665ddf9008363e37dd5d104a126aa7135af9f5e734d4f3a4f44",
+      "adminId": "ADM-1001",
+      "username": "admin",
+      "role": "super_admin",
+      "createdAt": 1791906463082,
+      "lastActivityAt": 1791906491651,
+      "expiresAt": 1791910091651
+    }
+  ]
+}

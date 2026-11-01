@@ -1,0 +1,6 @@
+{
+  "name": "NexGrid Admin Portal",
+  "description": "Secure customer management, domain registration & renewal tracking, invoicing, payments, and automated SMS & email notifications for NexGrid Digital Systems.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
